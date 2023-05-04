@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pendaftar.Fajar_AddPendaftarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="13dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:id="@+id/BtnImgPendaftar"
+            android:src="@drawable/ic_launcher_background"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Data Pendaftar Vaksin"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TxtNIK"
+            android:hint="NIK Pendaftar"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TxtNama"
+            android:hint="Nama Pendaftar" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TxtUmur"
+            android:hint="Umur Pendaftar"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:text="Jenis Kelamin Pendaftar"
+        android:textSize="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="3dp">
+
+        <RadioButton
+            android:id="@+id/radio_button_laki"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="Laki-laki"
+            android:text="Laki-laki"/>
+        <RadioButton
+            android:id="@+id/radio_button_perempuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="Perempuan"
+            android:text="Perempuan"/>
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="3dp"
+            android:text="Penyakit Bawaan Pendaftar"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPenyakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="3dp">
+
+            <RadioButton
+                android:id="@+id/radio_button_hipertensi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="Hipertensi"
+                android:text="Hipertensi"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_diabetes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="Hipertensi"
+                android:text="Diabetes"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_ginjal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="Ginjal Kronis"
+                android:text="Ginjal Kronis"/>
+            <RadioButton
+                android:id="@+id/radio_button_asma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="Asma"
+                android:text="Asma"/>
+            <RadioButton
+                android:id="@+id/radio_button_tidakada"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="Tidak Ada"
+                android:text="Tidak Ada"/>
+        </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnAddPendaftar"
+        android:text="Tambah Pendaftar"
+        android:backgroundTint="#2b8236"
+        android:textColor="#fff"
+        android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+</ScrollView>
