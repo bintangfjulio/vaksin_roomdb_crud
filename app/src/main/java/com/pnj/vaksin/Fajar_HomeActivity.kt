@@ -112,7 +112,7 @@ class Fajar_HomeActivity : AppCompatActivity() {
         }
     }
 
-    fun deleteMakanan(pendaftar: Fajar_Pendaftar, foto_delete: File) {
+    fun deletePendaftar(pendaftar: Fajar_Pendaftar, foto_delete: File) {
         val builder = AlertDialog.Builder(this@Fajar_HomeActivity)
         builder.setMessage("Apakah ${pendaftar.nama_pendaftar} ingin dihapus?")
             .setCancelable(false)
@@ -160,7 +160,7 @@ class Fajar_HomeActivity : AppCompatActivity() {
 
                     val foto_delete = File(pendaftarList[position].foto_pendaftar)
 
-                    deleteMakanan(pendaftarList[position], foto_delete)
+                    deletePendaftar(pendaftarList[position], foto_delete)
                 }
             }
         }).attachToRecyclerView(pendaftarRecyclerView)
