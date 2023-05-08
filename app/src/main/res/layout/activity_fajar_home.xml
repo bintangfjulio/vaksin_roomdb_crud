@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Cari Pendaftar"
-                android:textSize="20dp"
+                android:textSize="21dp"
                 android:id="@+id/txtSearchPendaftar"
                 android:background="@drawable/search_input_layout"/>
 
